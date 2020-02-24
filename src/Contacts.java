@@ -57,4 +57,8 @@ public class Contacts {
         int t = sc.nextInt();
         list.removeAt(t);
     }
+
+    public void showDetails(){
+        list.printList(true);
+    }
 }
