@@ -48,4 +48,13 @@ public class Contacts {
         list.find(name);
 
     }
+
+    public void deleteContact(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Here are all your contacts:");
+        list.printList(false);
+        System.out.print("Press the number against the contact to delete it: ");
+        int t = sc.nextInt();
+        list.removeAt(t);
+    }
 }
