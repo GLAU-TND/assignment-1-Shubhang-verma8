@@ -39,4 +39,13 @@ public class Contacts {
         PersonNode node = new PersonNode(p);
         list.add(node);
     }
+
+    public void searchContact(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("You could search for a contact from their first names: ");
+        String name = sc.nextLine();
+        System.out.println("ok");
+        list.find(name);
+
+    }
 }
